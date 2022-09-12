@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="welcome to my first website">
+    <meta name="keyword" content="HTML,CSS,PHP,developer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="bg-info">
+
+<div class="container">
+    <div class="row justify-content-center align-items-center mt-5">
+        <div class="col-12 col-md-8 t">
+            <h2 class="text-center">اطلاعات کاربری</h2>
+            <form id="submit_form" class="ext-center d-flex flex-column justify-content-center align-items-center gap-2">
+                <div class="form-floating  mb-3 w-75">
+                    <input type="text" class="form-control " id="national_id" placeholder="">
+                    <label for="national_id">کد ملی(مثال: 0021699577)</label>
+                </div>
+                <div class="form-floating  mb-3 w-75">
+                    <input type="text" class="form-control " id="phone" placeholder="">
+                    <label for="phone">شماره موبایل(مثال 09921929653)</label>
+                </div>
+                <h6 class="text-start w-75">پلاک خودرو</h6>
+                <div class="input-group mb-3 w-75">
+                    <button class="btn btn-dark dropdown-toggle" type="button" id="iran_code" data-bs-toggle="dropdown" aria-expanded="false">ایران</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item ir_code" data-code="11" >11</a></li>
+                        <li><a class="dropdown-item ir_code" data-code="12" >12</a></li>
+                        <li><a class="dropdown-item ir_code" data-code="13" >13</a></li>
+                        <li><a class="dropdown-item ir_code" data-code="14" >14</a></li>
+                        <li><a class="dropdown-item ir_code" data-code="15" >15</a></li>
+                    </ul>
+                    <input type="text" id="code1" class="form-control" placeholder="*  *  *" aria-label="Text input with dropdown button">
+                    <button class="btn btn-dark dropdown-toggle" id="word_code" type="button" data-bs-toggle="dropdown"  aria-expanded="false">الف</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item word_code" data-code="A" >الف</a></li>
+                        <li><a class="dropdown-item word_code" data-code="B" >ب</a></li>
+                        <li><a class="dropdown-item word_code" data-code="C" >ب</a></li>
+                        <li><a class="dropdown-item word_code" data-code="D">پ</a></li>
+                        <li><a class="dropdown-item word_code" data-code="E">د</a></li>
+                    </ul>
+                    <input type="text" id="code2" class="form-control" placeholder="*  *" aria-label="Text input with dropdown button">
+
+                </div>
+                <button type="submit" >
+                    ثبت اطلاعات
+                    <span></span>
+                </button>
+            </form>
+
+        </div>
+    </div>
+    <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-8-md ">
+            <table class="table">
+                <tr>
+                    <th>کد ملی</th>
+                    <th>شماره پلاک</th>
+                    <th>مالک خودرو</th>
+                    <th>خلافی</th>
+                </tr>
+                <tbody id="user_container">
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script src="javascript/bootstrap.bundle.min.js"></script>
+<script type="module" src="javascript/car.js"></script>
+</body>
+</html>

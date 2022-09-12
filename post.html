@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="welcome to my first website">
+    <meta name="keyword" content="HTML,CSS,PHP,developer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="bg-info">
+
+<div class="container">
+    <div class="row justify-content-center align-items-center mt-5">
+        <div class="col-12 col-md-8 text-center ">
+            <h2 class="text-center">اطلاعات کاربری</h2>
+            <form id="submit_form" class="text-center d-flex flex-column justify-content-center align-items-center gap-2">
+                <div class="form-floating  mb-3 w-75">
+                    <input type="text" class="form-control " id="post_Code" placeholder="">
+                    <label for="post_Code">کد مرسوله(مثال: 6598741569820026547852145)</label>
+                </div>
+                <button type="submit" >
+                    ثبت اطلاعات
+                    <span></span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="row justify-content-center align-items-center mt-5">
+        <div class="col-12 col-8-md ">
+            <table class="table">
+                <tr>
+                    <th>کد مرسوله</th>
+                    <th>نام فرستنده</th>
+                    <th>کد ملی فرستنده</th>
+                    <th>محتوای مرسوله</th>
+                    <th>زمان ارسال مرسوله</th>
+                </tr>
+                <tbody id="user_container">
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script src="javascript/bootstrap.bundle.min.js"></script>
+<script type="module" src="javascript/post.js"></script>
+</body>
+</html>
